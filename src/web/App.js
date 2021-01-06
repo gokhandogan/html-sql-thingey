@@ -8,10 +8,10 @@ const execute = ()=>{
   prom.then((res)=>{
 	  return res.text();
 	  //return res.json();
-  }).then((json)=>{
+  }).then((text)=>{
 	  let textOutput = document.getElementById("text");
-	  textOutput.innerText = json
-	  console.log(json);
+	  textOutput.innerText = text
+	  console.log(text);
   }) 
 }
 function App() {
