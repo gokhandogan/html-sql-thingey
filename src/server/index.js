@@ -42,6 +42,8 @@ app.post('/api/parse', (req, res) => {
 		});
 		return;
 	}
+	res.send("hata ile karşılaşıldı!");
+	return;
 })
 
 app.listen(port, () => {
